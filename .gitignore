@@ -1,0 +1,6 @@
+.DS_Store
+.preview/
+
+# Material bruto do cliente (vídeos de ~550 MB, acima do limite do GitHub).
+# A LP usa só as versões otimizadas em assets/imagens e assets/videos.
+assets/Visual/
