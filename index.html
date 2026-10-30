@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="assets/fonts/fonts.css" />
 
   <!-- Preload da imagem LCP do hero -->
-  <link rel="preload" as="image" href="assets/imagens/hero-sunny-amplo-v2.webp" media="(min-width: 861px)" fetchpriority="high" />
+  <link rel="preload" as="image" href="assets/imagens/hero-sunny-wide-v3.jpg" media="(min-width: 861px)" fetchpriority="high" />
   <link rel="preload" as="image" href="assets/imagens/hero-sunny-amplo-v2.webp" media="(max-width: 860px)" fetchpriority="high" />
 
   <!-- Tracking global ILIKIA/AICONIQ — Pixel + GA4 (G-YBV7EF3K1Z) + CAPI (server-side) via gateway.
@@ -240,13 +240,14 @@
     .hero-media {
       position: absolute;
       top: var(--nav-h); bottom: 0; right: 0;
-      left: max(40%, calc((100% - var(--maxw)) / 2 + 520px));
+      left: max(44%, calc((100% - var(--maxw)) / 2 + 560px));
       z-index: -1;
-      mask-image: linear-gradient(90deg, transparent 0%, #000 32%);
-      -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 32%);
+      mask-image: linear-gradient(90deg, transparent 0%, #000 20%);
+      -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 20%);
     }
     .hero-media picture { display: block; width: 100%; height: 100%; }
-    .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: center top; }
+    /* Use the wider framing with headroom, balancing the face and equipment. */
+    .hero-media img { width: 100%; height: 100%; object-fit: cover; object-position: right 28%; }
     .hero-copy { max-width: min(560px, 44vw); }
     .hero-kicker { font-size: var(--type-label); color: var(--ink-mute); letter-spacing: .01em; }
     .hero-kicker b { color: var(--sun-text); font-weight: 600; }
@@ -632,11 +633,36 @@
       .footer-top { grid-template-columns: repeat(3, minmax(0, 1fr)); }
       .footer-brand { grid-column: 1 / -1; }
     }
+    @media (min-width: 861px) {
+      .hero {
+        min-height: calc(var(--nav-h) + clamp(620px, 36.5vw, 680px));
+        padding: calc(var(--nav-h) + 40px) 0 40px;
+        display: flex;
+        background-image: linear-gradient(rgba(232, 220, 207, .68), rgba(232, 220, 207, .68)), url("assets/imagens/hero-sunny-panorama-v4.jpg");
+        background-size: 100% 100%, 210% auto;
+        background-position: center, left center;
+      }
+      .hero-media {
+        position: absolute;
+        inset: var(--nav-h) 0 0 auto;
+        width: 56%;
+        height: auto;
+        overflow: hidden;
+        mask-image: linear-gradient(90deg, transparent, #000 9%);
+        -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%);
+      }
+      .hero-media img { object-fit: cover; object-position: left bottom; transform: none; }
+      .hero-content { padding-block: 0; }
+      .hero-copy { max-width: min(560px, 43vw); }
+      .hero .h1 { font-size: clamp(40px, 3.2vw, 50px); }
+      .hero-actions { margin-top: 24px; flex-wrap: wrap; }
+      .hero-note { margin-top: 16px; }
+    }
     @media (max-width: 860px) {
       .hero { min-height: 0; display: block; padding: var(--nav-h) 0 56px; background: var(--bg); }
-      .hero-media { position: relative; top: auto; left: auto; height: clamp(240px, 38svh, 400px); mask-image: none; -webkit-mask-image: none; }
-      .hero-media img { object-position: center top; }
-      .hero-media::after { content: ""; position: absolute; inset: auto 0 0 0; height: 30%; background: linear-gradient(180deg, transparent, var(--bg)); }
+      .hero-media { position: relative; top: auto; left: auto; width: 100%; max-width: 680px; height: auto; aspect-ratio: 1; margin-inline: auto; mask-image: none; -webkit-mask-image: none; }
+      .hero-media img { object-position: center bottom; }
+      .hero-media::after { content: ""; position: absolute; inset: auto 0 0 0; height: 8%; background: linear-gradient(180deg, transparent, var(--bg)); }
       .hero-content { margin-top: 0; }
       .hero-copy { max-width: 620px; }
       .features { grid-template-columns: 1fr 1fr; gap: 48px 32px; }
@@ -651,7 +677,7 @@
       .faq-list summary { padding: 20px; gap: 16px; }
       .faq-list .answer { padding: 0 20px 24px; }
 
-      .hero-media { height: clamp(280px, 42svh, 360px); }
+      .hero-media { height: auto; }
       .hero .h1 { margin-top: 16px; }
 
       .hero .text { margin-top: 16px; }
@@ -732,6 +758,7 @@
   <section class="hero" id="top">
     <div class="hero-media">
       <picture>
+        <source media="(min-width: 861px)" srcset="assets/imagens/hero-sunny-wide-v3.jpg" />
         <source media="(max-width: 860px)" srcset="assets/imagens/hero-sunny-amplo-v2.webp" />
         <img src="assets/imagens/hero-sunny-amplo-v2.webp" alt="Paciente com a pele iluminada por luz solar ao lado do equipamento Sunny" width="1254" height="1254" fetchpriority="high" />
       </picture>
