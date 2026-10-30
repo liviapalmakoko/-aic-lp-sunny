@@ -1,6 +1,6 @@
 # Sunny · Comparativo entre briefing e entrega
 
-Data: 30/10/2026. Versão visual aprovada nesta revisão pela responsável pelo projeto, antes do envio à aprovação do cliente.
+Data: 30/10/2026. Versão corrigida para aderência ao briefing, antes do envio à aprovação do cliente.
 
 ## Base da análise
 
@@ -12,7 +12,7 @@ Data: 30/10/2026. Versão visual aprovada nesta revisão pela responsável pelo 
 
 A entrega mantém o posicionamento B2B, a sequência de seções e os argumentos técnicos do briefing. O formulário qualifica o contato por CRM e especialidade, e os CTAs conduzem à apresentação técnica. A ausência de depoimento público segue a orientação expressa do documento.
 
-A principal adaptação é a imagem da primeira dobra: a entrega adota uma composição editorial com modelo, equipamento e luz prismática, em vez do equipamento em ambiente clínico com close da Quasar solicitado no briefing. O close técnico está representado nas seções de tecnologia e diferenciais. O header foi aprovado visualmente na revisão de 30/10; essa aprovação não substitui a aprovação do cliente ou a confirmação das informações marcadas como pendentes no briefing.
+O hero foi corrigido para seguir a direção do briefing: equipamento Sunny em composição de consultório clínico, com close da ponteira Quasar e identificação dos 25 pinos. Os recortes oficiais do equipamento e da ponteira são preservados; somente o fundo de consultório é uma imagem ilustrativa gerada por IA. A versão anterior com modelo foi substituída. A revisão visual não substitui a aprovação do cliente ou a confirmação das informações marcadas como pendentes no briefing.
 
 ## Comparação por requisito
 
@@ -21,7 +21,7 @@ A principal adaptação é a imagem da primeira dobra: a entrega adota uma compo
 | Público: dermatologistas; venda da tecnologia para a clínica | Texto dirigido ao profissional, foco em controle de energia e protocolos; CRM obrigatório e seleção de especialidade | Atendido na implementação. O formulário aceita também Cirurgia plástica e Outra, como solicitado; não é uma restrição exclusiva a dermatologistas. |
 | Tom técnico, sem citar tecnologias concorrentes nem prometer resultado garantido | Mecanismos, parâmetros e suporte descritos; sem marcas concorrentes ou antes/depois; aviso de variação dos resultados | Alinhado editorialmente. As alegações clínicas e de exclusividade reproduzidas ainda exigem confirmação do cliente. |
 | 01 · Kicker, H1, subtexto, dois CTAs e reforço Aiconiq | Conteúdo preservado, com ênfase tipográfica no H1 e links para tecnologia e contato | Atendido. |
-| 01 · Equipamento em clínica e close nos 25 pinos | Hero com modelo e Sunny, fundo fotográfico contínuo; Quasar detalhada em outras seções | Adaptado visualmente e aprovado nesta revisão. A cena clínica e o close no hero não foram reproduzidos literalmente. |
+| 01 · Equipamento em clínica e close nos 25 pinos | Equipamento oficial completo sobre fundo ilustrativo de consultório; close oficial da Quasar com legenda dos 25 pinos na primeira dobra | Corrigido para seguir a direção do briefing. Fundo de consultório gerado; não representa uma instalação real. |
 | 02 · Duas radiofrequências, mecanismo, SHENB/Coreia/27 anos/96 países | Textos implementados; vídeo da Quasar; contadores de 27 anos e 96 países | Atendido no conteúdo. Números de autoridade e exclusividade dependem de validação indicada no briefing. |
 | 03 · IMCT, ACA, Hard/Soft e APRT | Quatro blocos com mídia, descrição técnica e CTA “Quero conhecer a Sunny na prática” | Atendido. Inclui os 25 pinos e os pulsos de 1 a 10 segmentos previstos. |
 | 04 · Aplicações faciais e pescoço | Lista preservada e mapa facial interativo com quatro marcadores | Atendido na interface. Correspondência das indicações com o registro ANVISA ainda pendente. |
@@ -49,9 +49,9 @@ Esses itens foram identificados no código. Não foram executados testes complet
 
 ## Direção visual final
 
-Paleta quente de bege e laranja Sunny, tipografia Sora, hierarquia editorial e CTAs com destaque. A composição aprovada aproxima texto, modelo e equipamento e mantém a altura da primeira dobra controlada. O fundo fotográfico continua atrás do texto; a transição da imagem fica restrita à borda, antes do rosto.
+Paleta quente de bege e laranja Sunny, tipografia Sora, hierarquia editorial e CTAs com destaque. O hero mantém a altura controlada e mostra o equipamento inteiro e o close da Quasar, sem modelo e sem antes/depois.
 
-O hero desktop usa `hero-sunny-wide-v3.jpg`; o fundo usa `hero-sunny-panorama-v4.jpg`; o mobile mantém `hero-sunny-amplo-v2.webp`. As duas versões JPG são adaptações geradas por IA a partir da imagem existente: devem ser tratadas como peças visuais, não como evidência técnica ou documentação do equipamento. Não se deve afirmar fidelidade técnica absoluta da representação gerada sem revisão do cliente.
+O hero usa os recortes oficiais `sunny-equipamento.webp` e `ponteira-quasar.webp`, sem regenerar ou deformar o produto. O fundo `hero-consultorio-v1.jpg` é uma ilustração fotográfica gerada por IA de um consultório vazio; não é fotografia de uma clínica real. Os antigos JPGs com modelo permanecem no histórico/material do repositório, mas não são mais utilizados pela LP.
 
 ## Pendências antes da publicação e da ativação de mídia
 
@@ -62,7 +62,7 @@ O hero desktop usa `hero-sunny-wide-v3.jpg`; o fundo usa `hero-sunny-panorama-v4
 3. **Autoridade e alegações técnicas:** confirmar 27 anos, 96 países e as afirmações de exclusividade. A copy implementada segue o briefing, mas não é uma verificação independente dessas alegações.
 4. **Suporte:** confirmar treinamento incluso e escopo do suporte clínico/técnico/marketing.
 5. **Prova social:** obter depoimento real, autorizado, com nome e CRM, somente se houver interesse em ativar a seção opcional.
-6. **Imagem:** aprovar a adaptação editorial do hero e revisar a representação do equipamento nas imagens geradas.
+6. **Imagem:** revisar a composição de consultório do hero; equipamento e ponteira usam recortes oficiais, e o ambiente é ilustrativo.
 
 ### Homologação técnica e operação
 
@@ -75,11 +75,11 @@ O hero desktop usa `hero-sunny-wide-v3.jpg`; o fundo usa `hero-sunny-panorama-v4
 ## Verificação realizada nesta revisão
 
 - Leitura do briefing completo por extração do DOCX e comparação com o HTML.
-- Revisão visual local do hero no Chrome durante os ajustes; a aprovação visual da responsável refere-se à versão final desta conversa.
-- Conferência estática de 22 referências locais de mídia/fontes/arquivos: sem arquivos ausentes.
+- Revisão visual local do hero clínico no Chrome em larguras de desktop e mobile após a correção para o briefing.
+- Conferência estática de 20 referências locais de mídia/fontes/arquivos: sem arquivos ausentes.
 - Conferência das âncoras internas: sem destinos ausentes.
 - `git diff --check`: sem erros de whitespace.
-- Nenhum teste de envio ao RD Station, consulta ANVISA, auditoria jurídica, teste completo de tracking ou implantação pública foi realizado.
+- GitHub Pages ativado nesta entrega; a prévia pública da versão anterior foi verificada. A correção do hero exige nova verificação após o push. Nenhum teste de envio ao RD Station, consulta ANVISA, auditoria jurídica ou teste completo de tracking foi realizado.
 
 ## Encaminhamento
 
