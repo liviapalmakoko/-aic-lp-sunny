@@ -49,7 +49,7 @@ Esses itens foram identificados no código. Não foram executados testes complet
 
 ## Direção visual final
 
-Paleta quente de bege e laranja Sunny, tipografia Sora, hierarquia editorial e CTAs com destaque. O hero mantém a altura controlada e mostra o equipamento inteiro e o close da Quasar, sem modelo e sem antes/depois.
+Paleta quente de bege e laranja Sunny, tipografia Sora, hierarquia editorial e CTAs com destaque. O hero mantém a altura controlada e mostra o equipamento inteiro e o close da Quasar, sem modelo e sem antes/depois. O close aparece como detalhe técnico circular ligado ao equipamento por uma linha laranja, sem o cartão branco sobreposto ao corpo do produto.
 
 O hero usa os recortes oficiais `sunny-equipamento.webp` e `ponteira-quasar.webp`, sem regenerar ou deformar o produto. O fundo `hero-consultorio-v1.jpg` é uma ilustração fotográfica gerada por IA de um consultório vazio; não é fotografia de uma clínica real. Os antigos JPGs com modelo permanecem no histórico/material do repositório, mas não são mais utilizados pela LP.
 
@@ -79,7 +79,7 @@ O hero usa os recortes oficiais `sunny-equipamento.webp` e `ponteira-quasar.webp
 - Conferência estática de 20 referências locais de mídia/fontes/arquivos: sem arquivos ausentes.
 - Conferência das âncoras internas: sem destinos ausentes.
 - `git diff --check`: sem erros de whitespace.
-- GitHub Pages ativado nesta entrega; a prévia pública da versão anterior foi verificada. A correção do hero exige nova verificação após o push. Nenhum teste de envio ao RD Station, consulta ANVISA, auditoria jurídica ou teste completo de tracking foi realizado.
+- GitHub Pages ativado nesta entrega; a prévia pública da versão anterior foi verificada. A correção do hero clínico foi publicada e verificada com resposta HTTP 200. Nenhum teste de envio ao RD Station, consulta ANVISA, auditoria jurídica ou teste completo de tracking foi realizado.
 
 ## Encaminhamento
 
